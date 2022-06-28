@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+html, body, ul {
+    font-family: 'open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+/*SIDE-BAR */
+
+.sidebar {
+    width: 410px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+/*TOOLBAR */
+
+.toolbar-container {
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
+}
+
+.user-photo {
+    width: 40px;
+    border-radius: 50%;
+    position:absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #ccc;
+}
+
+.auxicons-toolbar-container {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+}
+
+.auxicons-toolbar-container em {
+   color: #80868a;
+   font-size: 20px;
+   margin-left: 15px;
+   margin-right: 15px;
+   cursor: pointer;
+}
+
+/* NOTIFICATION CONTAINER*/
+
+.notification-container {
+    width: 100%;
+    height: 100px;
+    padding-top: 23px;
+    padding-left: 80px;
+    background-color: #9de1fe;
+    color: #384c56;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.fas.fa-bell-slash {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #9de1fe;
+    background-color: #f5fcff;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.notification-container p {
+    margin: 0;
+
+}
+
+.notification-container .recive-notification {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.activate-notification {
+  font-size: 12px;
+ 
+}
+
+.search-container {
+    width: 100%;
+    height: 50px;
+    padding-left: 7.5px;
+    padding-top: 7.5px;
+    background-color: #f8f8f8;
+    color: #bdc1c3;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+#contact-search {
+    font-size: 14px;
+    position: absolute;
+    top: 18px;
+    left: 30px;
+}
+
+#search {
+  width: 385px;
+  height: 35px;
+  border: none;
+  padding-left: 60px;
+  border-radius: 17.5px;
+  background-color: #FFF;
+  box-sizing: border-box;
+}
+
+.contacts-container {
+    height: auto;
+    background-color: #fff;
+}
+
+.contact-box {
+    cursor: pointer;
+    height: 72px;
+    background-color: #ffff;
+    border-top: 1px solid #f2f2f2;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contact-box:last-child {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.contact-box:hover {
+    background-color: #f4f5f5;
+}
+
+.active-chat {
+    background-color: #e9ebeb;
+}
+
+.active-chat .contact-box:hover {
+    background-color: #e9ebeb;
+}
+
+.contact-box .user-photo {
+    width: 50px;
+}
+
+.user-info {
+    margin-left: 80px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.user-info p, .message-info p {
+    margin: 0;
+}
+
+.user-name {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.user-messagepreview {
+    font-size: 14px;
+    color: #454545;
+}
+
+.fa-check-double {
+    margin-right: 5px;
+    color: #4fc3f7;
+}
+
+.message-info {
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+.message-info .message-time {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #CCC;
+}
+
+.message-pending {
+    background-color: #09d261;
+    color: #fff;
+    width: 19px;
+    height: 19px;
+    line-height: 19px;
+    border-radius:50%;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+}
+
+/* CHAT*/
+
+.chat-container {
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: calc(100% - 410px);
+    height: 100%;
+    background-color: #ccc;
+}
+
+/* CHAT NAV-BAR*/ 
+
+.chat-navbar{
+    height: 60px;
+    background-color: #eee;
+    border-left: 1px solid #ddd;
+    padding-left: 75px;
+}
+
+.chat-navbar p {
+    margin: 0;
+}
+
+.contactinfo-container {
+    display: inline-block;
+}
+
+.contactinfo-container .user-name {
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.chattools-container {
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 18px;
+}
+
+.chattools-container li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+    color: #80868a;
+    cursor: pointer;
+}
+
+/*CHAT */
+
+.messages-container {
+    height: calc(100% - 120px);
+    background-color: #e1dad2;
+    position: relative;
+}
+.messages-container p {
+    margin: 0;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background_whats.png);
+    background-repeat: repeat;
+    background-position: fixed;
+    opacity: .08;
+}
+
+.chat-messages {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.chat-messages p {
+    display: block;
+    color: #262626;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 7px;
+    position: relative;
+    width: 200px;
+}
+
+.guest-message {
+    background-color: #fff;
+}
+
+.guest-message:before {
+    content:'';
+    width:0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-right: 17px solid #fff;
+    position: absolute;
+    top:0;
+    left: -10px;
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    float: right;
+}
+
+.user-message:after {
+    content:'';
+    width:0;
+    height: 0;
+    border-bottom: 17px solid transparent;
+    border-left: 17px solid #dcf8c6;
+    position: absolute;
+    top:0;
+    right: -10px;
+}
+
+.sendmessage-container {
+    background-color: #efefef;
+    border-left: 1px solid #ddd;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+#chatmessage {
+    position: absolute;
+    top: 10px;
+    left:60px;
+    background-color: #fff;
+    border: none;
+    height:40px;
+    border-radius: 20px;
+    width: 815px;
+    padding-left: 20px;
+    font-size: 16px;
+
+}
+
+.sendmessage-container em {
+    font-size: 24px;
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    color: #80868a;
+}
+
+.fa-microphone {
+    float: right;
+}
